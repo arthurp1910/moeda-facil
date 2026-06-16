@@ -4,14 +4,15 @@ import Footer from "./Footer";
 
 export default function BaseLayout() {
   return (
-    <>
+    <><div className="appLayout">
       <Navbar />
 
-      <main>
+      <main className="appMain">
         <Outlet />
       </main>
 
       <Footer />
+      </div>
     </>
   );
 }
