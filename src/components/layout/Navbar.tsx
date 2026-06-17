@@ -11,8 +11,8 @@ export default function Navbar() {
         </div>
         
           <div className="menu">
-            <NavLink to="/">Cotações</NavLink>
             <NavLink to="/conversor">Conversor</NavLink>
+            <NavLink to="/">Cotacoes</NavLink>
             <NavLink to="/historico">Histórico</NavLink>
           </div>
     </nav>

@@ -1,0 +1,78 @@
+.card{
+    background-color: var(--color-primary);
+    color:var(--color-text-light);
+    padding: 8px;
+    border-radius: 16px;
+    margin: 8px 24px 0 24px;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 8px;
+    padding: 12px;
+}
+.botao{
+    background-color: var(--color-accent);
+    color: var(--color-text-light);
+    padding: 8px 16px;
+    border-radius: 12px;
+}
+.botao:hover{
+    background-color: var(--color-accent);
+    opacity: 0.8;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.input-group input, .input-group select{
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+}
+
+.titulo h1{
+    color: var(--color-text-light);
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    margin: 32px 24px 0px;
+    padding: 16px 8px 0 0;
+}
+
+.resultado{
+    background-color: var(--color-white);
+    color: var(--color-black);
+    text-align: left;
+    padding: 20px 22px;
+    border-radius: 12px;
+    margin: 100px 24px 0 24px;
+    gap: 8px;
+}
+
+.resultado h3{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    padding: 0 22px 36px;
+}
+
+.currencyConverter{
+    display: flex;
+    flex-direction: column;
+    gap: 0 16px;
+    margin: 8px 24px 0 24px;
+    height: 65vh;
+}
+
+.linha{
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
