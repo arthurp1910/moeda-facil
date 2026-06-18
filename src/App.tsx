@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import BaseLayout from "./components/layout/BaseLayout";
-import Home from "./pages/Home";
+import Quotes from "./pages/Quotes";
 import CurrencyConverter from "./pages/CurrencyConverter";
 import ConversionHistory from "./pages/ConversionHistory";
 
@@ -9,7 +9,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<BaseLayout />}>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Quotes />} />
           <Route path="/conversor" element={<CurrencyConverter />} />
           <Route path="/historico" element={<ConversionHistory />} />
         </Route>

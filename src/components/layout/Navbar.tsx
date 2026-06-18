@@ -12,7 +12,7 @@ export default function Navbar() {
         
           <div className="menu">
             <NavLink to="/conversor">Conversor</NavLink>
-            <NavLink to="/">Cotacoes</NavLink>
+            <NavLink to="/">Cotações</NavLink>
             <NavLink to="/historico">Histórico</NavLink>
           </div>
     </nav>
