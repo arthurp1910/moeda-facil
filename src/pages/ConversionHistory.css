@@ -1,0 +1,63 @@
+.conversionHistory{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 160px);
+    justify-content: center;
+    margin: 0 48px;
+}
+
+.tabelaHistorico {
+  width: 100%;
+  table-layout: fixed;
+  background-color: var(--color-white);
+  border-radius: 12px;
+  overflow: hidden;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.tabelaHistorico caption {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-text-black);
+}
+
+.tabelaHistorico th,
+.tabelaHistorico td {
+    width: 20%;
+    text-align: center;
+    padding: 8px;
+}
+
+.botaoExcluir{
+    background-color: transparent;
+    color: var(--color-text-light);
+    padding: 8px 16px;
+    border-radius: 12px;
+}
+
+.cabecalhoHistorico th{
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    padding: 8px;
+}
+
+.cabecalhoHistorico th:first-child {
+  border-top-left-radius: 12px;
+}
+
+.cabecalhoHistorico th:last-child {
+  border-top-right-radius: 12px;
+}
+
+.botaoExcluir:hover{
+    opacity: 0.8;
+}
+
+.botaoExcluir{
+    padding: 8px 16px;
+    border-radius: 12px;
+}
