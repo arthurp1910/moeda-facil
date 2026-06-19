@@ -1,27 +1,26 @@
 
 .tituloquotes h1{
-    color: var(--color-text-light);
+    color: var(--color-text-black);
     font-size: 32px;
     font-weight: 700;
     display: flex;
-    margin: 32px 24px 0 24px;
-    padding: 16px 16px 0 0;
+    margin: 0 0 8px 0;
 }
 .tabela {
   width: calc(100% - 48px);
   table-layout: fixed;
   background-color: var(--color-white);
   border-radius: 12px;
-  margin: 24px;
   border-collapse: collapse;
   overflow: hidden;
+  
 }
 
 .tabela th,
 .tabela td {
   width: 20%;
   text-align: center;
-  padding: 8px;
+  padding: 12px;
 }
 
 .cabecalho {
@@ -29,4 +28,13 @@
   color: var(--color-text-light);
   font-size: 18px;
   font-weight: 300;
+}
+
+.quotes{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 160px);
+  margin: 0 24px;
 }
