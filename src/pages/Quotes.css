@@ -2,7 +2,6 @@
     color: var(--color-text-black);
     font-size: 32px;
     font-weight: 700;
-    display: flex;
     margin: 0 0 8px 0;
 }
 
@@ -13,14 +12,6 @@
   border-radius: 12px;
   border-collapse: collapse;
   overflow: hidden;
-  
-}
-
-.cabecalhoHistorico {
-  background-color: var(--color-primary);
-  color: var(--color-text-light);
-  font-size: 18px;
-  font-weight: 300;
 }
 
 .tabela th,
@@ -43,5 +34,5 @@
   flex-direction: column;
   justify-content: center;
   height: calc(100vh - 160px);
-  margin: 0 48px;
+
 }

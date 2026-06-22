@@ -11,9 +11,18 @@ export default function Navbar() {
         </div>
         
           <div className="menu">
-            <NavLink to="/conversor">Conversor</NavLink>
-            <NavLink to="/">Cotações</NavLink>
-            <NavLink to="/historico">Histórico</NavLink>
+            <NavLink
+              to="/conversor" className={({ isActive }) => isActive ? "menuLink ativo" : "menuLink"}>
+              Conversor
+            </NavLink>
+
+            <NavLink to="/" className={({ isActive }) => isActive ? "menuLink ativo" : "menuLink"}>
+              Cotações
+            </NavLink>
+
+            <NavLink to="/historico" className={({ isActive }) => isActive ? "menuLink ativo" : "menuLink"}>
+              Histórico
+            </NavLink>
           </div>
     </nav>
   );

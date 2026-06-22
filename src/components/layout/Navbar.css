@@ -17,3 +17,11 @@
     background: transparent;
     color: var(--color-text-light);
 }
+
+.menuLink {
+    font-weight: 400;
+}
+
+.menuLink.ativo {
+    font-weight: 700;
+}

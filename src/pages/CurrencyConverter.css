@@ -5,6 +5,7 @@
     border-radius: 16px;
     margin: 8px 24px 0 24px;
 }
+
 form{
     display: flex;
     flex-direction: row;
@@ -14,16 +15,19 @@ form{
     margin: 0 8px;
     padding: 12px;
 }
+
 .botao{
     background-color: var(--color-accent);
     color: var(--color-text-light);
     padding: 8px 16px;
     border-radius: 12px;
 }
+
 .botao:hover{
     background-color: var(--color-accent);
     opacity: 0.8;
 }
+
 .input-group{
     display: flex;
     flex-direction: column;
@@ -43,7 +47,8 @@ form{
     font-weight: 700;
     display: flex;
     margin: 32px 24px 0px;
-    padding: 16px 8px 0 0;
+    padding: 16px 0 0 0;
+    justify-content: center;
 }
 
 .resultado{
@@ -57,7 +62,7 @@ form{
 }
 
 .resultado h3{
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     font-weight: 600;
     padding: 0 22px 36px;

@@ -1,19 +1,18 @@
 .conversionHistory{
     display: flex;
+    align-items: center;
     flex-direction: column;
-    height: calc(100vh - 160px);
     justify-content: center;
-    margin: 0 48px;
+    height: calc(100vh - 160px);
 }
 
 .tabelaHistorico {
-  width: 100%;
+  width: calc(100% - 48px);
   table-layout: fixed;
   background-color: var(--color-white);
   border-radius: 12px;
+  border-collapse: collapse;
   overflow: hidden;
-  border-collapse: separate;
-  border-spacing: 0;
 }
 
 .tabelaHistorico caption {
@@ -60,4 +59,24 @@
 .botaoExcluir{
     padding: 8px 16px;
     border-radius: 12px;
+}
+
+.paginacao{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 50px;
+    
+}
+
+.pagina{
+    background-color: var(--color-primary);
+    padding: 8px;
+    color: var(--color-text-light);
+    border: 1px solid rgba(255, 255, 255, 0.3)
+    
+}
+.pagina:hover{
+    opacity: 0.6;
+    background-color: var(--color-primary);
 }
