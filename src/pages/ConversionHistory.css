@@ -76,7 +76,16 @@
     border: 1px solid rgba(255, 255, 255, 0.3)
     
 }
+
 .pagina:hover{
     opacity: 0.6;
     background-color: var(--color-primary);
+}
+
+.pagina:first-of-type{
+    border-radius: 4px 0 0 4px;
+}
+
+.pagina:last-of-type {
+  border-radius: 0 4px 4px 0;
 }

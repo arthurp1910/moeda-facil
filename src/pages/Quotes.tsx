@@ -76,6 +76,26 @@ export default function Quotes() {
           ))}
         </tbody>
       </table>
+      <div className = "paginacaoCotacao">
+        <button className="paginaCotacao" type="button">
+          {"<"}
+        </button>
+        <button className="paginaCotacao" type="button">
+          {"1"}
+        </button>
+        <button className="paginaCotacao" type="button">
+          {"2"}
+        </button>
+        <button className="paginaCotacao" type="button">
+          {"3"}
+        </button>
+        <button className="paginaCotacao" type="button">
+          {"..."}
+        </button>
+        <button className="paginaCotacao" type="button">
+          {">"}
+        </button>
+      </div>
     </section>
   );
 }
