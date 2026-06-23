@@ -11,7 +11,7 @@
   --color-text: #000000;
   --color-text-light: #ffffff;
   --color-border: #aaccd6;
-  --color-botaoexcluir: #DB3F47;
+  --color-botaoexcluir: #db3f47;
 
   --font-main: "Poppins", Arial, sans-serif;
 }
@@ -63,24 +63,8 @@ button {
   flex: 1;
 }
 
-@view-transition {
-  navigation: auto;
-}
-
-::view-transition-old(root) {
-  animation: fade-out 0.3s ease;
-}
-
-::view-transition-new(root) {
-  animation: fade-in 0.3s ease;
-}
-
-@keyframes fade-out {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-
-@keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+@media screen and (max-width: 807px) {
+  .conversionHistory {
+    flex-direction: column;
+  }
 }

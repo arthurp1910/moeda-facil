@@ -48,60 +48,61 @@ export default function ConversionHistory() {
       resultado: "R$ 862,00",
     },
   ];
-  
+
   return (
-  <section className="conversionHistory">
+    <section className="conversionHistory">
+      <div className="areaTabela">
+        <table className="tabelaHistorico">
+          <caption className="tituloTabela">Histórico</caption>
+          <thead className="cabecalhoHistorico">
+            <th>Hora</th>
+            <th>Moeda de Origem</th>
+            <th>Moeda de destino</th>
+            <th>Valor informado</th>
+            <th>Taxa</th>
+            <th>Resultado</th>
+            <th>Ações</th>
+          </thead>
 
-    <table className="tabelaHistorico">
-      <caption className="tituloTabela">Histórico</caption>
-      <thead className="cabecalhoHistorico">
-      <th>Hora</th>
-      <th>Moeda de Origem</th>
-      <th>Moeda de destino</th>
-      <th>Valor informado</th>
-      <th>Taxa</th>
-      <th>Resultado</th>
-      <th>Ações</th>
-      </thead>
-
-      <tbody className="corpoHistorico">
-        {historicoMockado.map((item) => (
-          <tr key={item.id}>
-            <td>{item.hora}</td>
-            <td>{item.moedaOrigem}</td>
-            <td>{item.moedaDestino}</td>
-            <td>{item.valorInformado}</td>
-            <td>{item.taxa}</td>
-            <td>{item.resultado}</td>
-            <td>
-              <button className="botaoExcluir">
-                <img src={lixeira} alt="Excluir" />
-              </button>
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-    <div className = "paginacao">
-      <button className="pagina" type="button">
-        {"<"}
-      </button>
-      <button className="pagina" type="button">
-        {"1"}
-      </button>
-      <button className="pagina" type="button">
-        {"2"}
-      </button>
-      <button className="pagina" type="button">
-        {"3"}
-      </button>
-      <button className="pagina" type="button">
-        {"..."}
-      </button>
-      <button className="pagina" type="button">
-        {">"}
-      </button>
-    </div>
+          <tbody className="corpoHistorico">
+            {historicoMockado.map((item) => (
+              <tr key={item.id}>
+                <td>{item.hora}</td>
+                <td>{item.moedaOrigem}</td>
+                <td>{item.moedaDestino}</td>
+                <td>{item.valorInformado}</td>
+                <td>{item.taxa}</td>
+                <td>{item.resultado}</td>
+                <td>
+                  <button className="botaoExcluir">
+                    <img src={lixeira} alt="Excluir" />
+                  </button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <div className="paginacao">
+          <button className="pagina" type="button">
+            {"<"}
+          </button>
+          <button className="pagina" type="button">
+            {"1"}
+          </button>
+          <button className="pagina" type="button">
+            {"2"}
+          </button>
+          <button className="pagina" type="button">
+            {"3"}
+          </button>
+          <button className="pagina" type="button">
+            {"..."}
+          </button>
+          <button className="pagina" type="button">
+            {">"}
+          </button>
+        </div>
+      </div>
     </section>
   );
 }
