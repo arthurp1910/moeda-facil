@@ -67,6 +67,7 @@
   justify-content: flex-end;
   width: 100%;
   margin-top: 1px;
+  position: absolute;
 }
 
 .pagina {
@@ -87,6 +88,14 @@
 
 .pagina:last-of-type {
   border-radius: 0 4px 4px 0;
+}
+
+.paginacao {
+  pointer-events: none;
+}
+
+.pagina {
+  pointer-events: auto;
 }
 @media screen and (max-width: 807px) {
   .conversionHistory {
@@ -114,4 +123,23 @@
 .areaTabela {
   width: calc(100% - 48px);
   margin: 0 auto;
+}
+
+.acoesTabela {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.baixar {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  border-radius: 2px;
+  padding: 8px;
+}
+
+.baixar:hover {
+  opacity: 0.6;
+  background-color: var(--color-primary);
 }
